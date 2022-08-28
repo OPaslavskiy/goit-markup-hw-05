@@ -717,3 +717,7 @@ img {
   visibility: hidden;
   pointer-events: none;
 }
+
+.order-modal svg {
+  cursor: pointer;
+}

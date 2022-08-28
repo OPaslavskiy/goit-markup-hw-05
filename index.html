@@ -57,7 +57,7 @@
       <!--==========Головна секція замовлення==========-->
       <section class="hero section">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="hero-btn" type="button">Замовити послугу</button>
+        <button class="hero-btn" type="button" data-modal-open>Замовити послугу</button>
       </section>
       <!--==========Секція переваг==========-->
       <section class="section">
@@ -422,12 +422,13 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-hidden">
+    <div class="backdrop is-hidden" data-modal>
       <div class="order-modal">
         <svg width="30" height="30">
-          <use href="./images/sprite.svg#icon-close"></use>
+          <use href="./images/sprite.svg#icon-close" data-modal-close></use>
         </svg>
       </div>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
