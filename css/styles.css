@@ -281,7 +281,6 @@ img {
   border: 0;
   padding: 10px 32px;
   border-radius: 4px;
-
   transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -409,9 +408,8 @@ img {
 
 .social-media {
   fill: var(--clien-icon);
-  transition-property: background-color, fill;
-  transition-duration: 2s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  transition: background-color 2s cubic-bezier(0.4, 0, 0.2, 1), fill 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link {
@@ -439,9 +437,7 @@ img {
   justify-content: center;
   border-radius: 50%;
 
-  transition-property: background-color, fill;
-  transition-duration: 2s;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link a:hover,
@@ -481,6 +477,14 @@ img {
 .client-icon:hover .company-icon,
 .client-icon:focus .company-icon {
   fill: var(--accent-color);
+}
+
+.client-icon {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.company-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ==========Footer========== */
@@ -528,6 +532,8 @@ img {
 .footer-mail,
 .footer-tel {
   color: rgba(255, 255, 255, 0.6);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-mail:hover,
@@ -572,6 +578,8 @@ img {
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
+
+  transition: background-color 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-footer a:hover,
@@ -584,6 +592,7 @@ img {
 
 .social-media-footer .social-media {
   fill: #fff;
+  transition: fill 2s cubic-bezier(0.4, 0, 0.2, 1), background-color 2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ====================portfolio==================== */
