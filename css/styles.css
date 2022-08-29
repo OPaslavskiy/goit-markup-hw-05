@@ -409,7 +409,7 @@ img {
 .social-media {
   fill: var(--clien-icon);
 
-  transition: background-color 2s cubic-bezier(0.4, 0, 0.2, 1), fill 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link {
@@ -437,15 +437,17 @@ img {
   justify-content: center;
   border-radius: 50%;
 
-  transition: background-color 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.team-link a:hover .social-media,
+.team-link a:focus .social-media {
+  fill: #fff;
 }
 
 .team-link a:hover,
-.team-link a:focus,
-.team-link a:hover .social-media,
-.team-link a:focus .social-media {
+.team-link a:focus {
   background-color: var(--accent-color);
-  fill: #fff;
 }
 
 /* ==========Client========== */
