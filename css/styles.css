@@ -86,6 +86,24 @@ img {
   border-bottom-color: #ececec;
 }
 
+/* ==========logo========== */
+.logo {
+  font-family: 'Raleway', font-family;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  color: #000000;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+}
+
+.web {
+  color: var(--accent-color);
+}
+
+/* ==========nav========== */
+
 .site-nav,
 .nav {
   display: flex;
@@ -163,6 +181,13 @@ img {
   fill: var(--text-color);
 }
 
+.mail .icon-mail,
+.tel .icon-tel {
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .mail:hover .icon-mail,
 .mail:focus .icon-mail {
   fill: var(--accent-color);
@@ -173,23 +198,6 @@ img {
   fill: var(--accent-color);
 }
 
-/* ==========logo========== */
-.logo {
-  font-family: 'Raleway', font-family;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  color: #000000;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  margin-right: 93px;
-}
-
-.web {
-  color: var(--accent-color);
-}
-
-/* ==========nav========== */
 .nav-link {
   display: block;
   font-weight: 500;
@@ -198,14 +206,6 @@ img {
   color: var(--titel-color);
   padding-top: 32px;
   padding-bottom: 32px;
-}
-
-.nav-link:hover {
-  color: var(--accent-color);
-}
-
-.nav-link:focus {
-  color: var(--accent-color);
 }
 
 .studio-link,
@@ -222,13 +222,23 @@ img {
 }
 
 .mail:hover,
-.tel:hover {
+.tel:hover,
+.nav-link:hover {
   color: var(--accent-color);
 }
 
 .mail:focus,
-.tel:focus {
+.tel:focus,
+.nav-link:focus {
   color: var(--accent-color);
+}
+
+.nav-link,
+.mail,
+.tel {
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ==========body========== */
@@ -271,11 +281,15 @@ img {
   border: 0;
   padding: 10px 32px;
   border-radius: 4px;
+
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero-btn:hover,
 .hero-btn:focus {
-  background: #188ce8;
+  background-color: #188ce8;
 }
 
 /* ==========Benefits section========== */
@@ -395,6 +409,9 @@ img {
 
 .social-media {
   fill: var(--clien-icon);
+  transition-property: background-color, fill;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link {
@@ -421,6 +438,10 @@ img {
   align-items: center;
   justify-content: center;
   border-radius: 50%;
+
+  transition-property: background-color, fill;
+  transition-duration: 2s;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-link a:hover,
