@@ -581,14 +581,16 @@ img {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
 
-  transition: background-color 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-footer a:hover,
-.social-media-footer a:focus,
+.social-media-footer a:focus {
+  background-color: var(--accent-color);
+}
+
 .social-media-footer a:hover .social-media,
 .social-media-footer a:focus .social-media {
-  background-color: var(--accent-color);
   fill: #fff;
 }
 
@@ -607,16 +609,12 @@ img {
   text-align: center;
   color: var(--titel-color);
   cursor: pointer;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-btn:hover {
-  color: #fff;
-  background-color: var(--accent-color);
-  background: #2196f3;
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
-
+.portfolio-btn:hover,
 .portfolio-btn:focus {
   color: #fff;
   background-color: var(--accent-color);
@@ -679,6 +677,7 @@ img {
 
 .portfolio a {
   display: block;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio a:hover,
