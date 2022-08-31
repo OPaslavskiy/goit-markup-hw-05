@@ -731,7 +731,7 @@ img {
 
   visibility: visible;
   opacity: 1;
-  transition: opacity 250ms var(--time-cube);
+  transition: opacity 250ms var(--time-cube), visibility 0s;
 }
 
 .order-modal {
@@ -747,14 +747,16 @@ img {
     0px 2px 1px rgba(0, 0, 0, 0.2);
 
   transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
 
   transition: transform 250ms var(--time-cube);
 }
 
 .backdrop.is-hidden {
-  opacity: 0;
   visibility: hidden;
+  opacity: 0;
   pointer-events: none;
+  transition: opacity 250ms var(--time-cube), visibility 0s var(--time-cube) 250ms;
 }
 
 .backdrop.is-hidden .order-modal {
