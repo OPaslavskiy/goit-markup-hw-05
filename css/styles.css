@@ -342,6 +342,10 @@ img {
   margin-left: 15px;
 }
 
+.what-doing-conteiner {
+  position: relative;
+}
+
 .what-doing .item:last-child {
   margin-bottom: 0;
 }
@@ -592,7 +596,8 @@ img {
   color: var(--titel-color);
   cursor: pointer;
 
-  transition: background-color 250ms var(--time-cube), color 250ms var(--time-cube);
+  transition: background-color 250ms var(--time-cube), color 250ms var(--time-cube),
+    box-shadow 250ms var(--time-cube);
 }
 
 .portfolio-btn:hover,
@@ -731,7 +736,7 @@ img {
 
   visibility: visible;
   opacity: 1;
-  transition: opacity 250ms var(--time-cube), visibility 0s;
+  transition: opacity 250ms var(--time-cube), visibility 250ms var(--time-cube) 0s;
 }
 
 .order-modal {
@@ -756,7 +761,6 @@ img {
   visibility: hidden;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 250ms var(--time-cube), visibility 0s var(--time-cube) 250ms;
 }
 
 .backdrop.is-hidden .order-modal {
