@@ -699,10 +699,12 @@ img {
 
 .portfolio-text {
   height: 100%;
+  width: 100%;
   font-size: 18px;
   line-height: 1.56;
   letter-spacing: 0.03em;
   color: #fff;
+  overflow: auto;
 }
 
 .portfilio-overlay {
